@@ -92,13 +92,13 @@
                against the desired state.
                Deploy apps manifests to destination cluster. Detect's autosync apps and takes action if needed.
 		
-	  4. Redies :
+          4. Redies :
               Redies used for caching.
 			 
-	  5. Application Set :
+          5. Application Set :
               It is used to deploy the application to other multiple clusters.
-
-	  6. Dex :
+ 
+          6. Dex :
               Identity Server.
 
 	
