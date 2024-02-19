@@ -90,8 +90,7 @@
           3. Argo CD Application Controller		
                It is an k8s controller which continuously monitor the applications & compares the current/live state
                against the desired state.
-	       Deploy apps manifests to destination cluster.
-	       Detect's autosync apps and takes action if needed.
+               Deploy apps manifests to destination cluster. Detect's autosync apps and takes action if needed.
 		
 	  4. Redies :
               Redies used for caching.
