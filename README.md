@@ -27,15 +27,15 @@
        Developer will commit the source code in GitHub then DevOps engineer will configure the changes/Yaml files
        and according to that Argo CD will pull the files & apply it on Kubernetes
 
-      Argo CD is working in between Source code repository and Kubernetes cluster. Developer can make the changes and commit 
-      to the Source code repository like Git or a Git based Private repository such as Cloud Source Repository, Code commit.
-      Argo CD pulls Kubernetes manifest changes and applies them to the cluster. If any changes are detected, then Argo CD 
-      applies those changes automatically to the cluster.
+       Argo CD is working in between Source code repository and Kubernetes cluster. Developer can make the changes and commit 
+       to the Source code repository like Git or a Git based Private repository such as Cloud Source Repository, Code commit.
+       Argo CD pulls Kubernetes manifest changes and applies them to the cluster. If any changes are detected, then Argo CD 
+       applies those changes automatically to the cluster.
 
 # 04. GitOps Tools :
           1. Argo CD :
 	       It is an populer GitOps tool for Kubernetes. It is easy to setup & has GUI mode.
-	  2. Flux :
+          2. Flux :
 	       Also an GitOps tool but here we have to configure dashboard manually.
 
 # 05. Introduction & Why we need Argo CD :
