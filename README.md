@@ -113,20 +113,20 @@
 	
 # 11. Argo CD GUI Installation as per (Just me and Opensource channel):
          1. kubectl create namespace argocd
-	 2. kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.10.0/manifests/install.yaml 
+         2. kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.10.0/manifests/install.yaml 
          3. kubectl get all -n argocd
          4. In service file change clusterip to nodeport type named argo-cd server service.
-	      1. You can edit the existing service file by - kubectl edit svc service_name
+              1. You can edit the existing service file by - kubectl edit svc service_name
               2. Also you can perform the following command through cli as
                    kubectl patch svc service_name -n argocd -p '{"spec":{"type":"LoadBalancer"}}'
          5. The ID & Pass will be - ID- admin & Pass will be the name of the pod 
-	 6. Also you can generate the pass as -
-               kubectl -n argocd get secret argocd-initial-admin-secret -o jasonpath="{.data.password}" | base64 -d && echo
+         6. Also you can generate the pass as -
+              kubectl -n argocd get secret argocd-initial-admin-secret -o jasonpath="{.data.password}" | base64 -d && echo
  
  
 # 12. Installation of Argo CD CLI on Kubernetes Cluster :
         In above step we have installed Argo CD GUI in this step will install CLI :
-	   1. curl -sSL -o argocd-linux-amd64 https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
+           1. curl -sSL -o argocd-linux-amd64 https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
            2. sudo install -m 555 argocd-linux-amd64 /usr/local/bin/argocd
            3. rm argocd-linux-amd64
            4. Now see the Argo CD CLI version by using command.
