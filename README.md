@@ -64,16 +64,16 @@
          Desired State :
            It is the state where the source code is present of GitHub.
       
-	 Actual State :
+         Actual State :
            It is the stste where the source code is applied in Kubernetes cluster.
       
-	 Sync :
+         Sync :
            With help of Sync we can check that Actual & Desired states are matching or not, if not it will	
            auto sync the states.
       
-	 Refresh/Compare :
+         Refresh/Compare :
            Compare the live state with Updated Git Code	  
-	     Argo CD automatically refreshes in every 3 min to sync the data.
+	   Argo CD automatically refreshes in every 3 min to sync the data.
 	 
 	 
 # 09. Argo CD Architecture :
