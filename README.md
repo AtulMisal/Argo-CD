@@ -34,9 +34,9 @@
 
 # 04. GitOps Tools :
           1. Argo CD :
-	       It is an populer GitOps tool for Kubernetes. It is easy to setup & has GUI mode.
+               It is an populer GitOps tool for Kubernetes. It is easy to setup & has GUI mode.
           2. Flux :
-	       Also an GitOps tool but here we have to configure dashboard manually.
+               Also an GitOps tool but here we have to configure dashboard manually.
 
 # 05. Introduction & Why we need Argo CD :
        Argo CD is an continuous delivery tool for Kubernetes. 
