@@ -73,7 +73,7 @@
       
          Refresh/Compare :
            Compare the live state with Updated Git Code	  
-	   Argo CD automatically refreshes in every 3 min to sync the data.
+           Argo CD automatically refreshes in every 3 min to sync the data.
 	 
 	 
 # 09. Argo CD Architecture :
@@ -104,24 +104,24 @@
 	
 # 10. Argo CD Benifits :
         Any changes updated in configuration files , Argo CD track the changes and realized that actual state does not equal 
-	to desired state, and it will update the application Out of Sync. It automatically pull changes and will deploy to 
-	Kubernetes cluster. It can track updates to branches, tags and versions.
+        to desired state, and it will update the application Out of Sync. It automatically pull changes and will deploy to 
+        Kubernetes cluster. It can track updates to branches, tags and versions.
         It provides application Health visibility, Real Time updates and last sync status as well as current status. 
-	It Keeps cluster in Sync with Git Repo. Argo CD provides easy roll back to applications with previous state with 
-	revert to back commit.
+        It Keeps cluster in Sync with Git Repo. Argo CD provides easy roll back to applications with previous state with 
+        revert to back commit.
 
 	
 # 11. Argo CD GUI Installation as per (Just me and Opensource channel):
          1. kubectl create namespace argocd
-         2. kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.10.0/manifests/install.yaml
-	 3. kubectl get all -n argocd
-	 4. In service file change clusterip to nodeport type named argo-cd server service.
+	 2. kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.10.0/manifests/install.yaml 
+         3. kubectl get all -n argocd
+         4. In service file change clusterip to nodeport type named argo-cd server service.
 	      1. You can edit the existing service file by - kubectl edit svc service_name
-	      2. Also you can perform the following command through cli as
-		    kubectl patch svc service_name -n argocd -p '{"spec":{"type":"LoadBalancer"}}'
+              2. Also you can perform the following command through cli as
+                   kubectl patch svc service_name -n argocd -p '{"spec":{"type":"LoadBalancer"}}'
          5. The ID & Pass will be - ID- admin & Pass will be the name of the pod 
 	 6. Also you can generate the pass as -
-	      kubectl -n argocd get secret argocd-initial-admin-secret -o jasonpath="{.data.password}" | base64 -d && echo
+               kubectl -n argocd get secret argocd-initial-admin-secret -o jasonpath="{.data.password}" | base64 -d && echo
  
  
 # 12. Installation of Argo CD CLI on Kubernetes Cluster :
